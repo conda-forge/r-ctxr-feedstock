@@ -1,4 +1,4 @@
-{% set version = '1.0.0' %}
+{% set version = "1.1.0" %}
 {% set posix = 'm2-' if win else '' %}
 
 package:
@@ -9,10 +9,10 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/ctxR_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/ctxR/ctxR_{{ version }}.tar.gz
-  sha256: d9aa8f18b144df07a4e92308c8e2f40444e1973772fca253b7a7c2c7599170d4
+  sha256: 33a555b2ec95f7494ac298f130abb1afec066ed1e25d888bd800a5429e369fa6
 
 build:
-  number: 1
+  number: 0
   noarch: generic
   rpaths:
     - lib/R/lib/
@@ -59,13 +59,8 @@ test:
 about:
   home: https://github.com/USEPA/ctxR
   license: GPL-3.0-or-later
-  summary: Access chemical, hazard, bioactivity, and exposure data from the Computational Toxicology
-    and Exposure ('CTX') APIs <https://api-ccte.epa.gov/docs/>. 'ctxR' was developed
-    to streamline the process of accessing the information available through the 'CTX'
-    APIs without requiring prior knowledge of how to use APIs. Most data is also available
-    on the CompTox Chemical Dashboard ('CCD') <https://comptox.epa.gov/dashboard/> and
-    other resources found at the EPA Computational Toxicology and Exposure Online Resources
-    <https://www.epa.gov/comptox-tools>.
+  summary: Access chemical, hazard, bioactivity, and exposure data from the Computational Toxicology and Exposure ('CTX') APIs <https://api-ccte.epa.gov/docs/>. 'ctxR' was developed to streamline the process of accessing the information available through the 'CTX' APIs without requiring prior knowledge of how to use APIs.
+    Most data is also available on the CompTox Chemical Dashboard ('CCD') <https://comptox.epa.gov/dashboard/> and other resources found at the EPA Computational Toxicology and Exposure Online Resources <https://www.epa.gov/comptox-tools>.
   license_family: GPL3
   license_file:
     - '{{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-3'
