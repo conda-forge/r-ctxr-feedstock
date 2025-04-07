@@ -1,4 +1,4 @@
-{% set version = "1.1.1" %}
+{% set version = "1.1.2" %}
 {% set posix = 'm2-' if win else '' %}
 
 package:
@@ -9,7 +9,7 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/ctxR_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/ctxR/ctxR_{{ version }}.tar.gz
-  sha256: ec363bfbc158ba116f3fddb0a172083f020dd320eb0ba8105d3dc31af4a1d2f3
+  sha256: a7d7dc08d8523d52426cb01dc54eb90ec2320d8ed53eb721e832c0d271ce13fe
 
 build:
   number: 0
