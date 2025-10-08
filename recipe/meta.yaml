@@ -32,6 +32,7 @@ requirements:
     - r-data.table
     - r-httr
     - r-jsonlite
+    - r-lifecycle
     - r-purrr
     - r-rlang
     - r-stringr
@@ -44,6 +45,7 @@ requirements:
     - r-data.table
     - r-httr
     - r-jsonlite
+    - r-lifecycle
     - r-purrr
     - r-rlang
     - r-stringr
